@@ -28,6 +28,7 @@ Leaderboard
   transform: translate(-50%, -50%);
   width: 400px;
   height: 308px;
+  opacity:0.95;
   background: -webkit-gradient(linear, left top, left bottom, from(#3a404d), to(#181c26));
   background: linear-gradient(to bottom, #3a404d, #181c26);
   border-radius: 10px;

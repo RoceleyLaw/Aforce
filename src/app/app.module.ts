@@ -48,15 +48,19 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
         component: LeaderboardPageComponent
       },
       {
-        path:'users',
+        path: 'users',
         component: UserDashboard
       },
       {
-        path:'login-page',
+        path: 'login-page',
         component: LoginPageComponent
       },
       {
-        path:'user-item/:id',
+        path: 'contribute-page',
+        component: ContributePageComponent
+      },
+      {
+        path: 'user-item/:id',
         component: UserDetailsComponent
       },
     ])
