@@ -14,6 +14,7 @@ import { ChartsModule } from 'ng2-charts';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { ContributePageComponent } from './contribute-page/contribute-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
     UserDetailsComponent,
     LoadingSpinnerComponent,
     LeaderboardPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    ContributePageComponent
   ],
   imports: [
     BrowserModule,
