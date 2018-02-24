@@ -39,25 +39,28 @@ article {
   <div class="container">
     <div style="display: block;">
     <nav>
-        <ul>
-          <li><a href="#">London</a></li>
-          <li><a href="#">Paris</a></li>
-          <li><a href="#">Tokyo</a></li>
-        </ul>
+      <table>
+        <tbody>
+          <tr *ngFor="let name of nameArr; let i = index" class="post list-group-item">
+            <a href="#">{{nameArr[i]}}</a>
+          </tr>
+        </tbody>
+      </table>
     </nav>
     <article>
       <table style="width: 100%">
         <tr>
           <td>
             <iframe width="900" height="600"
-              src="https://www.youtube.com/embed/iugZbbUvAmI?controls=1">
+              [src]= "sanitizer.bypassSecurityTrustResourceUrl(urlArr[i])">
             </iframe>
           </td>
+
           <td>
             <aside>
               <div>
-                <h1> Dress yourself </h1>
-                <p> Project description </p>
+                <h1> {{nameArr[i]}} </h1>
+                <p> {{nameArr[i]}} </p>
               </div>
             </aside>
           </td>
