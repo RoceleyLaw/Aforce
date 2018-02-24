@@ -1,0 +1,43 @@
+<div *ngIf="!question" class="loading-section">
+  <!-- You can add a loading indicator here if you want to :) </i> -->
+</div>
+<div *ngIf="question">
+  <div class="item-laptop">
+    <td>
+      <p  [routerLink]="['/games-item', question.iid]">
+        Question{{i+1}}: {{question.que}}
+      </p>
+      <div class="subtext-laptop">
+        <p>
+          <iframe width="420" height="315"
+                  [src]='transform(question.url)'>
+          </iframe>
+        </p>
+
+          <p><a class="title">
+            {{question.A}}
+          </a></p>
+          <p><a class="title">
+            {{question.B}}
+          </a></p>
+        <p><a class="title">
+            {{question.C}}
+          </a></p>
+        <p><a class="title">
+            {{question.D}}
+          </a></p>
+        <!--<input [name]="question.iid" id="A" type="radio" value="A" [(ngModel)]="answer" >-->
+        <!--<label>{{question.A}}</label><br>-->
+        <!--<input [name]="question.iid" id="B" type="radio" value="B" [(ngModel)]="answer">-->
+        <!--<label>{{question.B}}</label><br>-->
+        <!--<input [name]="question.iid" id="C" type="radio" value="C" [(ngModel)]="answer">-->
+        <!--<label>{{question.C}}</label><br>-->
+        <!--<input [name]="question.iid" id="D" type="radio" value="D" [(ngModel)]="answer">-->
+        <!--<label>{{question.D}}</label><br>-->
+      </div>
+    </td>
+    <!--<td><button type="button" class="btn btn-default" name="delete" (click)="deleteUser()">delete</button></td>-->
+  </div>
+  <div class="item-mobile">
+  </div>
+</div>
