@@ -12,6 +12,8 @@ import { UserService } from './user.service';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { ChartsModule } from 'ng2-charts';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
+import { GamesComponent } from './games/games.component';
+import { GamesItemsComponent } from './games-items/games-items.component';
 import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ContributePageComponent } from './contribute-page/contribute-page.component';
@@ -26,7 +28,9 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
     LoadingSpinnerComponent,
     LeaderboardPageComponent,
     LoginPageComponent,
-    ContributePageComponent
+    ContributePageComponent,
+    GamesComponent,
+    GamesItemsComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +67,10 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
         path: 'user-item/:id',
         component: UserDetailsComponent
       },
+      {
+        path:'games',
+        component: GamesComponent
+      }
     ])
   ],
   providers: [UserService],
