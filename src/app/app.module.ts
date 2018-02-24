@@ -54,7 +54,7 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
       },
       {
         path: 'users',
-        component: UserDashboard
+        component: UserDetailsComponent
       },
       {
         path: 'login-page',
@@ -63,10 +63,6 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
       {
         path: 'contribute-page',
         component: ContributePageComponent
-      },
-      {
-        path: 'user-item/:id',
-        component: UserDetailsComponent
       },
       {
         path:'games',
