@@ -68,7 +68,7 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
         component: UserDetailsComponent
       },
       {
-        path:'games',
+        path: 'games',
         component: GamesComponent
       }
     ])
