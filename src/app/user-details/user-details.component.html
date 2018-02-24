@@ -1,6 +1,95 @@
+<style>
+div.container {
+    width: 100%;
+}
+
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 10;
+    padding: 1em;
+}
+
+aside {
+    position: fixed;
+    top: 50px;
+    left: 1150px;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    overflow: hidden;
+}
+</style>
+
+
+
 <div class="row">
   <div class="container">
     <div style="display: block;">
+    <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+    </nav>
+    <article>
+      <table style="width: 100%">
+        <tr>
+          <td>
+            <iframe width="900" height="600"
+              src="https://www.youtube.com/embed/iugZbbUvAmI?controls=1">
+            </iframe>
+          </td>
+          <td>
+            <aside>
+              <div>
+                <h1> Dress yourself </h1>
+                <p> Project description </p>
+              </div>
+            </aside>
+          </td>
+        </tr>
+      </table>
+      
+
+      
+
+    </article>
+
+    
+    
+
+    
+
+  
+
+    <table style="width:100%">
+      <tr>
+        <td>
+          <a href="#" class="btn btn-lg btn-default center animated infinite pulse" routerLink="/users">Previous Tutorial</a>
+        </td>
+        <td>
+          <a href="#" class="btn btn-lg btn-default center animated infinite pulse" routerLink="/users">Next Tutorial</a>
+        </td>
+      </tr>
+    </table>
+    
+    
+
+<!-- 
     <canvas baseChart
                 [(datasets)]="lineChartData"
                 [(labels)]="lineChartLabels"
@@ -8,9 +97,11 @@
                 [colors]="lineChartColors"
                 [legend]="lineChartLegend"
                 [chartType]="lineChartType"></canvas>
+-->
     </div>
   </div>
 </div>
+<!-- 
 <div class="row">
   <div class="container">
     <table class="table table-responsive table-condensed">
@@ -25,3 +116,5 @@
   <div class="userinfo">
   </div>
 </div>
+-->
+
