@@ -2,13 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { UserService } from '../user.service';
-
+import {DomSanitizer} from '@angular/platform-browser';
 @Component({
   selector: 'app-user-details',
   templateUrl: './user-details.component.html',
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit {
+  public nameArr: Array<String> = ["Dress Yourself"]
+  public urlArr: Array<String> = ["https:\/\/www.youtube.com/embed/iugZbbUvAmI?controls=1"]
+  public descriptionArr: Array<String> = ["description1"]
+  public i = 0;
+//https://www.youtube.com/embed/iugZbbUvAmI?controls=1
+  public url: String = "https:\/\/www.youtube.com/embed/iugZbbUvAmI?controls=1";
+  videoURL() {
+    return this.sanitizer.bypassSecurityTrustUrl(this.url);
+  }
 
   // Initialize settings for the chart
   public lineChartData: Array<any> = [
@@ -32,14 +41,13 @@ export class UserDetailsComponent implements OnInit {
   public lineChartType: string = 'line';
   public array: Array<number>;
 
+
   //Initialize data-related fields
   public item: any;
   public sub: any;
   public data: any;
   public id: string;
-
-  constructor(private _userService: UserService, private route: ActivatedRoute,
-  private router: Router) {
+  constructor(private _userService: UserService, private route: ActivatedRoute, private router: Router, public sanitizer: DomSanitizer) {
     this.array = new Array<number>();
     this.sub = this.route.params.subscribe(params => {
          this.id = params["id"];},
