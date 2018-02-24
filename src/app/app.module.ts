@@ -39,12 +39,8 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
       },
       {
         path:'users',
-        component: UserDashboard
-      },
-      {
-        path:'user-item/:id',
         component: UserDetailsComponent
-      },
+      }
     ])
   ],
   providers: [UserService],

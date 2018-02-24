@@ -42,7 +42,7 @@ article {
       <table>
         <tbody>
           <tr *ngFor="let name of nameArr; let i = index" class="post list-group-item">
-            <a href="#">{{nameArr[i]}}</a>
+            <a (click) = "onClick(i)" >{{name}}</a>
           </tr>
         </tbody>
       </table>
@@ -60,7 +60,7 @@ article {
             <aside>
               <div>
                 <h1> {{nameArr[i]}} </h1>
-                <p> {{nameArr[i]}} </p>
+                <p> {{descriptionArr[i]}} </p>
               </div>
             </aside>
           </td>
@@ -72,20 +72,13 @@ article {
 
     </article>
 
-    
-    
-
-    
-
-  
-
     <table style="width:100%">
       <tr>
         <td>
-          <a href="#" class="btn btn-lg btn-default center animated infinite pulse" routerLink="/users">Previous Tutorial</a>
+          <a (click) = "onClickMinus()" class="btn btn-lg btn-default center animated infinite pulse">Previous Tutorial</a>
         </td>
         <td>
-          <a href="#" class="btn btn-lg btn-default center animated infinite pulse" routerLink="/users">Next Tutorial</a>
+          <a (click) = "onClickPlus()" class="btn btn-lg btn-default center animated infinite pulse">Next Tutorial</a>
         </td>
       </tr>
     </table>
