@@ -32,3 +32,38 @@ body {
 .navbar-inverse .navbar-nav>li>a {
     color: RGBA(244, 244, 244, 0.60);
   }
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  margin-top: 10px;
+  position: absolute;
+  right: 50px;
+}
+
+.btn, [role="button"], [type="button"] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.btn-irenic {
+  background-color: #e67277;
+  color: white;
+}
+.btn-irenic:hover, .btn-irenic:focus, .btn-irenic:active {
+  background-color: #d9825a;
+  color: white;
+  outline:0;
+}
+
+.btn-serene {
+  background-color: #f39264;
+  color: white;
+}
+
+

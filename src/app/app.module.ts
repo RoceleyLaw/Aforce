@@ -14,6 +14,10 @@ import { ChartsModule } from 'ng2-charts';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { GamesComponent } from './games/games.component';
 import { GamesItemsComponent } from './games-items/games-items.component';
+import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { ContributePageComponent } from './contribute-page/contribute-page.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,10 @@ import { GamesItemsComponent } from './games-items/games-items.component';
     UserDetailsComponent,
     LoadingSpinnerComponent,
     GamesComponent,
-    GamesItemsComponent
+    GamesItemsComponent,
+    LeaderboardPageComponent,
+    LoginPageComponent,
+    ContributePageComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,23 @@ import { GamesItemsComponent } from './games-items/games-items.component';
         component: SplashPageComponent
       },
       {
-        path:'users',
+        path: 'leaderboard-page',
+        component: LeaderboardPageComponent
+      },
+      {
+        path: 'users',
+        component: UserDashboard
+      },
+      {
+        path: 'login-page',
+        component: LoginPageComponent
+      },
+      {
+        path: 'contribute-page',
+        component: ContributePageComponent
+      },
+      {
+        path: 'user-item/:id',
         component: UserDetailsComponent
       },
       {
