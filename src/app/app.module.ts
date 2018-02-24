@@ -13,6 +13,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { ChartsModule } from 'ng2-charts';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.co
     UserItem,
     UserDetailsComponent,
     LoadingSpinnerComponent,
-    LeaderboardPageComponent
+    LeaderboardPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,10 @@ import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.co
       {
         path:'users',
         component: UserDashboard
+      },
+      {
+        path:'login-page',
+        component: LoginPageComponent
       },
       {
         path:'user-item/:id',
