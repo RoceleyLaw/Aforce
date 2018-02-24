@@ -17,6 +17,7 @@ import { GamesItemsComponent } from './games-items/games-items.component';
 import { LeaderboardPageComponent } from './leaderboard-page/leaderboard-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ContributePageComponent } from './contribute-page/contribute-page.component';
+import { UploadComponent } from './upload/upload.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
     GamesItemsComponent,
     LeaderboardPageComponent,
     LoginPageComponent,
-    ContributePageComponent
+    ContributePageComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +69,10 @@ import { ContributePageComponent } from './contribute-page/contribute-page.compo
       {
         path:'games',
         component: GamesComponent
+      },
+      {
+        path: 'upload-page',
+        component: UploadComponent
       }
     ])
   ],
