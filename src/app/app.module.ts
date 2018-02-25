@@ -43,10 +43,6 @@ import { GamesItemsComponent } from './games-items/games-items.component';
       },
       {
         path:'users',
-        component: UserDashboard
-      },
-      {
-        path:'user-item/:id',
         component: UserDetailsComponent
       },
       {

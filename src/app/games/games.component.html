@@ -15,9 +15,23 @@
       <th>Questions</th>
     </tr>
     </thead>
+
+
     <tbody>
     <tr *ngFor="let question of questions; let i = index" class="post list-group-item">
+
       <app-games-items class="item-block" [question] = "question" [i]="i"></app-games-items>
+      <input [name]="question.iid" [id]="'A'+i" type="radio" value="A" [(ngModel)]="answers[i]" [checked]="answers[i]=='A'" [name]="i">
+      <label>{{question.A}}</label><br>
+      <input [name]="question.iid" [id]="'B'+i" type="radio" value="B" [(ngModel)]="answers[i]" [checked]="answers[i]=='B'" [name]="i">
+      <label>{{question.B}}</label><br>
+      <input [name]="question.iid" [id]="'C'+i" type="radio" value="C" [(ngModel)]="answers[i]" [checked]="answers[i]=='C'" [name]="i">
+      <label>{{question.C}}</label><br>
+      <input [name]="question.iid" [id]="'D'+i" type="radio" value="D" [(ngModel)]="answers[i]" [checked]="answers[i]=='D'" [name]="i">
+      <label>{{question.D}}</label><br>
+    </tr>
+    <tr class="post list-group-item">
+    <input type="button" class="btn btn-default center" value="submit">
     </tr>
     </tbody>
   </table>
