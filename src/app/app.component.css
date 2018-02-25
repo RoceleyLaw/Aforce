@@ -3,7 +3,7 @@ body {
 }
 
 .full {
-    background:RGBA(216, 216, 216, 1.00) no-repeat center center fixed;
+    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: RGBA(255, 255, 255, 0.30);
+    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
 }
 
 .navbar-inverse .navbar-toggle {

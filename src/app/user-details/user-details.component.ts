@@ -14,7 +14,6 @@ export class UserDetailsComponent implements OnInit {
   public descriptionArr: Array<String> = ["description1","description2", "description3"]
   public i = 0;
 //https://www.youtube.com/embed/iugZbbUvAmI?controls=1
-  public url: String = "https:\/\/www.youtube.com/embed/iugZbbUvAmI?controls=1";
 
   // Initialize settings for the chart
   public lineChartData: Array<any> = [

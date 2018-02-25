@@ -26,7 +26,7 @@ h1 {
   background-position: center;
   background-size: cover;
   background-image: url("../../assets/bg-heart.svg");
-  background-color: RGBA(216, 216, 216, 1.00);
+  background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
   color: white;
   font-family: Arial;
   background-attachment: fixed;
